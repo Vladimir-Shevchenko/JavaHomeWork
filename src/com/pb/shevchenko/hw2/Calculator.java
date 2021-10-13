@@ -33,7 +33,7 @@ public class Calculator {
                     System.out.println("You can't devide by zero!");
                     break;
                 }
-                System.out.printf("Result: %1.1f",(double)operand1/operand2);
+                System.out.printf("Result: %1.1f", (double)operand1/operand2);
 
         }
 
