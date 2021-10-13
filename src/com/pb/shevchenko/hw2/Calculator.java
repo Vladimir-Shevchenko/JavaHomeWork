@@ -10,25 +10,31 @@ public class Calculator {
         System.out.println("Please enter first number");
         int operand1 = scanner.nextInt();
 
-        System.out.println("Enter first number");
+        System.out.println("Enter second number");
         int operand2 = scanner.nextInt();
 
+
         System.out.println("Enter arithmetic sign");
-        String arithmeticSign = scanner.nextLine();
+        String arithmeticSign = scanner.next();
+
 
         switch (arithmeticSign){
             case "+":
-                System.out.println(operand1+operand2);
+                System.out.printf("Result: %d",operand1+operand2);
                 break;
             case "-":
-                System.out.println(operand1-operand2);
+                System.out.printf("Result: %d",operand1-operand2);
                 break;
             case "*":
-                System.out.println(operand1*operand2);
+                System.out.printf("Result: %d",operand1*operand2);
                 break;
             case "/":
-                System.out.println(operand1/operand2);
-                break;
+                if(operand2==0){
+                    System.out.println("You can't devide by zero!");
+                    break;
+                }
+                System.out.printf("Result: %1.1f",(double)operand1/operand2);
+
         }
 
     }
