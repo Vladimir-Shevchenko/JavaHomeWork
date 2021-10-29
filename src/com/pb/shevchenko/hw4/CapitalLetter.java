@@ -5,14 +5,19 @@ import java.util.Scanner;
 public class CapitalLetter {
 
     public static void main(String[] args) {
+go();
+}
+
+
+
+    public static void go(){
         Scanner scanner= new Scanner(System.in);
 
         String s = scanner.nextLine();
 
         String[]arr=s.split(" ");
-for(String i:arr){
-    System.out.print((i.charAt(0)+"").toUpperCase()+i.substring(1)+" ");
-}
-
+        for(String i:arr){
+            System.out.print((i.charAt(0)+"").toUpperCase()+i.substring(1)+" ");
     }
+}
 }
