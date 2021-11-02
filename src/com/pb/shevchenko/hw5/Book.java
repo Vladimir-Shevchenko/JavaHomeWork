@@ -1,6 +1,5 @@
 package com.pb.shevchenko.hw5;
 
-import java.util.Date;
 
 public class Book {
 
